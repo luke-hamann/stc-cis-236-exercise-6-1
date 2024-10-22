@@ -26,8 +26,8 @@ namespace RoutingPractice.Controllers
             }
         }
 
-        [Route("[action]/{num?}")]
-        public IActionResult Countdown(int num = 0)
+        [Route("[action]/{start}/{end?}/{message?}")]
+        public IActionResult Countdown(int start, int end = 0, string message = "")
         {
             string contentString = "Counting down:\n";
             for(int i = num; i >= 0; i--)
