@@ -29,7 +29,7 @@ namespace RoutingPractice.Controllers
         [Route("[action]/{start}/{end?}/{message?}")]
         public IActionResult Countdown(int start, int end = 0, string message = "")
         {
-            string contentString = "Counting down:\n";
+            string contentString = "Luke Hamann\n\nCounting down:\n";
             for(int i = start; i >= end; i--)
             {
                 contentString += i + "\n";
